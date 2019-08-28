@@ -11,10 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { from } from 'rxjs';
 
-import { HeaderComponent } from './components/header/header.component';
-
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
