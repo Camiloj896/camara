@@ -1,0 +1,9 @@
+// ---------------------- HEADER --------------------
+
+.header-content{ display: flex; width: 100%; margin: 0; padding: 0 }
+.header-content>div{ width: 20%; margin: 0; padding: 0}
+.header-content>div.logo{ width: 60%; display: flex; justify-content: center; align-items: center}
+.notifi{display: flex; justify-content: center; align-items: center}
+.notifi>ion-buttons{cursor: pointer; height: 100%; width: 85%; display: flex; justify-content: center; align-items: center; border-radius: 50%;}
+.notifi>ion-buttons:hover{background-color: #ffffff17}
+div.logo>img{ width: 50%}

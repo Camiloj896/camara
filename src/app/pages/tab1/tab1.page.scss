@@ -1,0 +1,49 @@
+//---------------  STYLOS CARD --------------------
+
+//TAMAÑO Y MARGEN <ION-CARD>
+.content-card{
+    height: 115px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+// ion-content > .content-card:first-child{ margin-top: 8px; }
+
+//TAMAÑO CONTENIDO CARDS
+ion-card-content{
+    height: 100%;
+    padding: 0;
+}
+
+//ESTILO FOOTER DE LA CARD
+
+.footer-card{
+    height: 100%;
+    display: flex;
+    align-items: flex-end
+}
+
+.footer-card > div{
+    height: 35%;
+    width: 8%;
+    background-color: #b6122e !important;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-card > div:first-child{
+    height: 35%;
+    width: 92%;
+    background-color: #071442e3 !important;
+    color: #fff;
+    font-weight: bold;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+//IMAGENES PARA CADA CARD
+.Card-1{ background-image: url(./../../../assets/img/servicios.png); }
+.Card-2{ background-image: url(./../../../assets/img/Informacion.png); }
+.Card-3{ background-image: url(./../../../assets/img/contactenos.png); }
