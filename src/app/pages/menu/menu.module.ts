@@ -13,14 +13,6 @@ const routes: Routes = [
       {
         path: 'first',
         loadChildren: '../first-with-tabs/first-with-tabs.module#FirstWithTabsPageModule'
-      },
-      {
-        path: 'second',
-        loadChildren: '../second/second.module#SecondPageModule'
-      },
-      {
-        path: 'servicios',
-        loadChildren: '../servicios/servicios.module#ServiciosPageModule'
       }
     ]
   }

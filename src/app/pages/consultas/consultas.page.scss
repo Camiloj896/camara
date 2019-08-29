@@ -1,0 +1,80 @@
+
+.content-image{
+    height: 40%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;    
+    box-shadow: none;
+    background-image: url(./../../../assets/img/fondo-consultas.png);
+    background-size: 100% 100%;
+}
+
+.content-image > ion-card-content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.aux-card{
+    width: 100%;
+    height: 30%;
+    padding-left: 25px;
+    font-size: 1.2rem;
+    color: #FFF;
+}
+
+.content-options{
+    height: 60%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;    
+    box-shadow: none;
+}
+.content-options> ion-card-content{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.content-options> ion-card-content > div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.options{
+    width: 33%;
+    height: 80%;
+    background-color: #eeeeee;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+}
+
+div.options > div{
+    width: 100%;
+    height: 30%;
+    color:#071442;
+    font-size: 0.72rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.options > div:first-child{
+    height: 70%;
+}
+
+div.options > div:first-child > img {
+    height: 80%;
+    width: 60%;
+    padding-top: 5px;
+}
+

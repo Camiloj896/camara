@@ -25,3 +25,4 @@ describe('FirstWithTabsPage', () => {
     expect(component).toBeTruthy();
   });
 });
+

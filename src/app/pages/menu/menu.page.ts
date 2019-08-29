@@ -10,14 +10,14 @@ export class MenuPage implements OnInit {
   selectedPath = '';
  
   pages = [
-    {
-      title: 'First Page with Tabs',
-      url: '/menu/first'
-    },
-    {
-      title: 'Second Page blank',
-      url: '/menu/second'
-    }
+    // {
+    //   title: 'First Page with Tabs',
+    //   url: '/menu/first'
+    // },
+    // {
+    //   title: 'Second Page blank',
+    //   url: '/menu/second'
+    // }
   ];
  
   constructor(private router: Router) {

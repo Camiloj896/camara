@@ -2,9 +2,11 @@
 
 //TAMAÑO Y MARGEN <ION-CARD>
 .content-card{
-    height: 115px;
+    height: 30%;
+    width: 100%;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 10px;
+    border-radius: 0;
 }
 
 // ion-content > .content-card:first-child{ margin-top: 8px; }
@@ -44,6 +46,6 @@ ion-card-content{
 }
 
 //IMAGENES PARA CADA CARD
-.Card-1{ background-image: url(./../../../assets/img/servicios.png); }
-.Card-2{ background-image: url(./../../../assets/img/Informacion.png); }
-.Card-3{ background-image: url(./../../../assets/img/contactenos.png); }
+.Card-1{ background-image: url(./../../../assets/img/servicios.png); background-size: 100% 100%;}
+.Card-2{ background-image: url(./../../../assets/img/Informacion.png); background-size: 100% 100%;}
+.Card-3{ background-image: url(./../../../assets/img/contactenos.png); background-size: 100% 100%;}
