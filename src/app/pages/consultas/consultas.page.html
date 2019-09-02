@@ -4,31 +4,32 @@
   <ion-card class="content-image">
     <ion-card-content>
       <div class="aux-card">
-        <strong>Consultas</strong>
+        <strong>Servicios</strong>
       </div>
     </ion-card-content>
   </ion-card>
   <ion-card class="content-options">
     <ion-card-content>
       <div>
-        <div class="options">
-          <div></div>
-          <div><strong>Opción 1</strong></div>
+        <div class="options" (click)="openLink()">
+          <img src="./../../../assets/icon/Servicios/renovaciones.png" alt="">          
         </div>
-        <div class="options">
-          <div></div>
-          <div><strong>Opción 2</strong></div>
+        <div class="options" routerLink="/menu/first/tabs/tab1/consultas/certificados">
+          <img src="./../../../assets/icon/Servicios/certificados_electronicos.png" alt="">
         </div>
       </div>
       <div>
-        <div class="options">
-          <div></div>
-          <div><strong>Opción 3</strong></div>
+        <div class="options" (click)="openLink()">
+            <img src="./../../../assets/icon/Servicios/Eventos_Capacitaciones.png" alt="">
         </div>
-        <div class="options">
-          <div></div>
-          <div><strong>Opción 4</strong></div>
+        <div class="options" (click)="openLink()">
+            <img src="./../../../assets/icon/Servicios/Soli_turnos_citas.png" alt="">
         </div> 
+      </div>
+      <div>
+          <div class="options" routerLink="/menu/first/tabs/tab1/consultas/chat">
+              <img src="./../../../assets/icon/Servicios/Asesoria_Virtual.png" alt="">
+          </div>          
       </div>
     </ion-card-content>
   </ion-card>

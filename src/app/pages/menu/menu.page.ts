@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterEvent } from '@angular/router';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
  
 @Component({
   selector: 'app-menu',
@@ -20,12 +21,24 @@ export class MenuPage implements OnInit {
     // }
   ];
  
-  constructor(private router: Router) {
+  constructor(private router: Router, private browser : InAppBrowser) {
     this.router.events.subscribe((event: RouterEvent) => {
       if (event && event.url) {
         this.selectedPath = event.url;
       }
     });
+  }
+
+  openLink(){
+    let options:InAppBrowserOptions = {
+      hidden:"yes",
+      hidenavigationbuttons:"yes",
+      hideurlbar: "yes",
+      hardwareback: "yes",
+      footer: "yes",
+      footercolor: "blue"
+    }
+    this.browser.create("https://www.ccb.org.co" , "_self", options)
   }
  
   ngOnInit() {

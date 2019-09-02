@@ -39,12 +39,12 @@
 .content-options> ion-card-content{
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 0;    
 }
 
 .content-options> ion-card-content > div {
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,10 +53,15 @@
 
 div.options{
     width: 33%;
-    height: 100%;
+    height: 80%;
     background-color: #eeeeee;
     margin: 0 10px 0 10px;
     border-radius: 5px;
+    
+}
+
+.aux-opntions{
+    margin-top: -20px;
 }
 
 div.options > img {

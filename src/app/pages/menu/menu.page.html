@@ -14,56 +14,67 @@
           <ion-icon name="log-out" slot="start"></ion-icon>
           Logout
         </ion-item> -->
-        <div></div>
-        <div>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 1
-          </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 2
-          </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 3
-          </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 4
-          </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 5
-          </ion-item>
+        <div class="menu-header">
+          <div>
+            <ion-avatar>
+              <img src="./../../../assets/img/logo-ccb-blanco.png" alt="">
+            </ion-avatar>
+          </div>
+          <div>
+            <div>
+                <div>
+                    <h5>Hola,</h5>
+                </div>
+                <div>
+                    <h3>Bienvenido</h3>
+                </div>  
+            </div>                    
+          </div>
         </div>
         <div>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 6
+          <ion-item tappable (click)="openLink()" routerDirection="root" color="secondary">
+            <ion-icon name="folder"></ion-icon>
+            <strong>Servicios</strong>
           </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 7
+          <ion-item tappable (click)="openLink()" routerDirection="root" color="secondary">
+            <ion-icon name="information-circle"></ion-icon>
+            <strong>información</strong>
           </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 8
+          <ion-item tappable (click)="openLink()" routerDirection="root" color="secondary">
+            <ion-icon name="mail-open"></ion-icon>
+            <strong>Contáctenos</strong>
           </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 9
+          <ion-item tappable (click)="openLink()" routerDirection="root" color="secondary">
+            <ion-icon name="settings"></ion-icon>
+            <strong>Configuración</strong>
+          </ion-item>          
+        </div>
+        <div class="border-menu">
+          <ion-item tappable routerLink="/login" routerDirection="root" color="secondary">
+            <ion-icon name="copy"></ion-icon>
+            <strong>Registrarse</strong>
           </ion-item>
-          <ion-item tappable routerLink="/login" routerDirection="root">
-            <ion-icon name="log-out" slot="start"></ion-icon>
-            opción 10
+          <ion-item tappable routerLink="/login" routerDirection="root" color="secondary">
+            <ion-icon name="person"></ion-icon>
+            <strong>Ingresar</strong>
           </ion-item>
+          <ion-item tappable routerLink="/login" routerDirection="root" color="secondary">            
+            <strong>Cerrar Sesion</strong>
+          </ion-item>          
         </div>
       </ion-list>
     </ion-content>
     <ion-footer>
-      <div>
-        
+      <div class="content-footer">
+        <div>
+          <strong>Siguenos en</strong>
+        </div>
+        <div class="redes">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
       </div>
     </ion-footer> 
   </ion-menu>

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
-  selector: 'app-consultas',
-  templateUrl: './consultas.page.html',
-  styleUrls: ['./consultas.page.scss'],
+  selector: 'app-certificados-electronicos',
+  templateUrl: './certificados-electronicos.page.html',
+  styleUrls: ['./certificados-electronicos.page.scss'],
 })
-export class ConsultasPage implements OnInit {
+export class CertificadosElectronicosPage implements OnInit {
 
   constructor(private browser:InAppBrowser) { }
 

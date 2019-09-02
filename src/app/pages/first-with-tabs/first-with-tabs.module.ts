@@ -21,9 +21,15 @@ const routes: Routes = [
       {
         path: 'tab1/transacciones',
         loadChildren: '../transacciones/transacciones.module#TransaccionesPageModule'
+      },
+      {
+        path: 'tab1/consultas/certificados',
+        loadChildren: '../certificados-electronicos/certificados-electronicos.module#CertificadosElectronicosPageModule'
+      },
+      {
+        path: 'tab1/consultas/chat',
+        loadChildren: '../chat/chat.module#ChatPageModule'
       }
-
-      
     ]
   },
   {

@@ -9,11 +9,28 @@ ion-list{
 }
 
 ion-list > div {
-    height: 35%;
+    height: 25%;
     width: 100%;
 }
 
-ion-list > div:first-child { height: 30%;}
+ion-list > div:first-child { height: 38%;}
+
+// ------------------- HEADER -------------------
+
+.menu-header > div { width: 100%;height: 40%; display: flex; justify-content: center; color:#071442;}
+.menu-header > div:first-child { height: 60%; align-items: center; text-align: center;}
+
+ion-avatar{
+    width: 50%;
+    height: 85%;
+    background-color: #fff;
+    margin-top: 25px;
+}
+
+h5{ margin:15px 0 0 0; text-align: center}
+h3{ margin: 0; font-weight: bold}
+
+// ------------------- HEADER -------------------
 
 ion-footer{
     height: 11%;
@@ -24,3 +41,33 @@ ion-footer > div{
     height: 100%;
     width: 100%
 }
+
+ion-item { color: #071442;}
+ion-item > ion-icon{ margin-right: 10px; }
+
+.border-menu{    
+    border-top: 1px solid !important;
+    margin-top: 15px !important;
+}
+
+.content-footer > div{
+    width: 100%;
+    height: 70%;
+    color: #eeeeee;
+    display: flex;
+}
+
+.content-footer > div:first-child { height: 30%; padding: 10px; }
+.content-footer > div:first-child { height: 30%; padding: 10px; }
+
+.redes{
+    display: flex;
+    align-items: flex-end;
+}
+
+.redes > ion-icon{
+    height: 60%;
+    width: 10%;
+    margin: 0 5px 0 5px;
+}
+
