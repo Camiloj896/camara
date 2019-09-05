@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<ion-content>
+  <ion-card class="content-image">
+    <ion-card-content>
+      <div class="aux-card">
+        <strong>Contactenos</strong>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="content-options">
+    <ion-card-content>
+      <div>
+        <div class="options" (click)="openLink()">
+          <img src="./../../../assets/icon/Contactenos/chat.png" alt="">          
+        </div>
+        <div class="options" routerLink="/menu/first/tabs/tab1/consultas/certificados">
+          <img src="./../../../assets/icon/Contactenos/Lamada_Virtual.png" alt="">
+        </div>
+      </div>
+      <div>
+        <div class="options" (click)="openLink()">
+            <img src="./../../../assets/icon/Contactenos/ubiquenos.png" alt="">
+        </div>
+        <div class="options" (click)="openLink()">
+            <img src="./../../../assets/icon/Contactenos/llamada383.png" alt="">
+        </div> 
+      </div>      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

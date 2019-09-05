@@ -6,7 +6,7 @@
     padding: 0;
     border-radius: 0;    
     box-shadow: none;
-    background-image: url(./../../../assets/img/fondo-tramites.png);
+    background-image: url(./../../../assets/img/fondo_contactenos.png);
     background-size: 100% 100%;
 }
 
@@ -22,18 +22,16 @@
 
 .aux-card{
     width: 100%;
-    height: 40%;
+    height: 30%;
     padding-left: 25px;
     font-size: 1.2rem;
     color: #FFF;
 }
 
-.aux-card > div > strong{
+.aux-card > strong{
     font-size: 30px;    
     text-shadow: -3px 1px black;
 }
-
-.aux-card > div > strong:first-child{ margin-top: 3px; }
 
 .content-options{
     height: 60%;
@@ -51,27 +49,25 @@
 
 .content-options> ion-card-content > div {
     width: 100%;
-    height: 40%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 }
 
+.content-options> ion-card-content > div:first-child{
+    margin-top: 20%;
+}
+
 div.options{
     width: 33%;
-    height: 80%;
+    height: 100%;
     background-color: #eeeeee;
     margin: 0 10px 0 10px;
     border-radius: 5px;
-    
-}
-
-.aux-opntions{
-    margin-top: -20px;
 }
 
 div.options > img {
     height: 100%;    
 }
-

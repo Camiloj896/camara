@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<ion-content>
+  <ion-card class="content-image">
+    <ion-card-content>
+      <div class="aux-card">
+        <div><strong>Eventos y</strong></div>
+        <div><strong>Capacitaciones</strong></div>       
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="content-options">
+    <ion-card-content>
+      <div>
+        <div class="options" (click)="openLink()">
+          <img src="./../../../assets/icon/Certificados/Solicitud.png" alt="">          
+        </div>
+        <div class="options" (click)="openLinkA()">
+          <img src="./../../../assets/icon/Certificados/Descarga.png" alt="">
+        </div>
+      </div>      
+      <div>
+          <div class="options aux-opntions" (click)="openLink()">
+              <img src="./../../../assets/icon/Eventos/res_encuesta.png" alt="">
+          </div>
+          <div class="options aux-opntions" (click)="openLink()">
+            <img src="./../../../assets/icon/Certificados/Verificado.png" alt="">
+        </div>     
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

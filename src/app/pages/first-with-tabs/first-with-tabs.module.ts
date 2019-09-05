@@ -27,9 +27,33 @@ const routes: Routes = [
         loadChildren: '../certificados-electronicos/certificados-electronicos.module#CertificadosElectronicosPageModule'
       },
       {
+        path: 'tab1/consultas/eventos',
+        loadChildren: '../eventos/eventos.module#EventosPageModule'
+      },
+      {
+        path: 'tab1/consultas/turnos',
+        loadChildren: '../turnos-citas/turnos-citas.module#TurnosCitasPageModule'
+      },
+      {
+        path: 'tab1/contactenos',
+        loadChildren: '../contactenos/contactenos.module#ContactenosPageModule'
+      },
+      {
         path: 'tab1/consultas/chat',
         loadChildren: '../chat/chat.module#ChatPageModule'
-      }
+      },
+      {
+        path: 'tab2',
+        loadChildren: '../noticias/noticias.module#NoticiasPageModule'
+      },
+      {
+        path: 'tab3',
+        loadChildren: '../consultas/consultas.module#ConsultasPageModule'
+      },
+      {
+        path: 'tab4',
+        loadChildren: '../chat/chat.module#ChatPageModule'
+      }      
     ]
   },
   {

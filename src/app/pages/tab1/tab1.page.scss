@@ -45,6 +45,10 @@ ion-card-content{
     padding: 20px;
 }
 
+.footer-card > div > h3{
+    font-size: 25px;
+}
+
 //IMAGENES PARA CADA CARD
 .Card-1{ background-image: url(./../../../assets/img/servicios.png); background-size: 100% 100%;}
 .Card-2{ background-image: url(./../../../assets/img/Informacion.png); background-size: 100% 100%;}
