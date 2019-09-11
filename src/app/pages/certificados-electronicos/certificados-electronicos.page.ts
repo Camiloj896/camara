@@ -13,7 +13,7 @@ export class CertificadosElectronicosPage implements OnInit {
   ngOnInit() {
   }
 
-  openLink(){
+  LinkSolicitud(){
     let options:InAppBrowserOptions = {
       hidden:"yes",
       hidenavigationbuttons:"yes",
@@ -22,7 +22,31 @@ export class CertificadosElectronicosPage implements OnInit {
       footer: "yes",
       footercolor: "blue"
     }
-    this.browser.create("https://www.ccb.org.co" , "_self", options)
+    this.browser.create("https://linea.ccb.org.co/CertificadosElectronicosR/Index.html#/buscar-inscritos" , "_self", options)
+  }
+
+  LinkDescarga(){
+    let options:InAppBrowserOptions = {
+      hidden:"yes",
+      hidenavigationbuttons:"yes",
+      hideurlbar: "yes",
+      hardwareback: "yes",
+      footer: "yes",
+      footercolor: "blue"
+    }
+    this.browser.create("https://linea.ccb.org.co/CertificadosElectronicosR/Index.html#/descargas" , "_self", options)
+  }
+
+  LinkVerificacion(){
+    let options:InAppBrowserOptions = {
+      hidden:"yes",
+      hidenavigationbuttons:"yes",
+      hideurlbar: "yes",
+      hardwareback: "yes",
+      footer: "yes",
+      footercolor: "blue"
+    }
+    this.browser.create("http://s3.amazonaws.com/validacertificados/Index.html#/verificacion" , "_self", options)
   }
 
 }

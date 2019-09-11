@@ -42,7 +42,7 @@ ion-footer > div{
     width: 100%
 }
 
-ion-item { color: #071442;}
+ion-item { color: #336592;}
 ion-item > ion-icon{ margin-right: 10px; }
 
 .border-menu{    
@@ -69,5 +69,14 @@ ion-item > ion-icon{ margin-right: 10px; }
     height: 60%;
     width: 10%;
     margin: 0 5px 0 5px;
+}
+
+.separador-menu{
+    border-block-start: 1px solid;
+}
+
+ion-item > img {
+    width: 14%;    
+    margin-right: 5px;
 }
 

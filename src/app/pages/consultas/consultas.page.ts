@@ -25,4 +25,16 @@ export class ConsultasPage implements OnInit {
     this.browser.create("https://www.ccb.org.co" , "_self", options)
   }
 
+  LinkRenovacion(){
+    let options:InAppBrowserOptions = {
+      hidden:"yes",
+      hidenavigationbuttons:"yes",
+      hideurlbar: "yes",
+      hardwareback: "yes",
+      footer: "yes",
+      footercolor: "blue"
+    }
+    this.browser.create("https://linea.ccb.org.co/apprenovaciones/index.html#!/" , "_self")
+  }
+
 }
