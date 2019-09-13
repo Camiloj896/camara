@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-eventos',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventosPage implements OnInit {
 
-  constructor() { }
+  constructor(private browser:InAppBrowser) { }
 
   ngOnInit() {
+  }
+
+  LinkEventos(){    
+    const Eventos = this.browser.create("https://campusvirtual.ccb.org.co/account/login/?next=/" , "_self")
+    Eventos.show();
   }
 
 }

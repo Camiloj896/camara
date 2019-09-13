@@ -14,15 +14,8 @@ export class TransaccionesPage implements OnInit {
   }
 
   openUrl(){
-    let options:InAppBrowserOptions = {
-      hidden:"yes",
-      hidenavigationbuttons:"yes",
-      hideurlbar: "yes",
-      hardwareback: "yes",
-      footer: "yes",
-      footercolor: "blue"
-    }
-    this.browser.create("https://www.ccb.org.co" , "_self", options)
+    const Info = this.browser.create("https://www.ccb.org.co" , "_self");
+    Info.show();
   }
 
 }

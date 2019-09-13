@@ -13,28 +13,14 @@ export class ConsultasPage implements OnInit {
   ngOnInit() {
   }
 
-  openLink(){
-    let options:InAppBrowserOptions = {
-      hidden:"yes",
-      hidenavigationbuttons:"yes",
-      hideurlbar: "yes",
-      hardwareback: "yes",
-      footer: "yes",
-      footercolor: "blue"
-    }
-    this.browser.create("https://www.ccb.org.co" , "_self", options)
+  openAsesoria(){
+    const Asesoria = this.browser.create("https://asesoriavirtual.ccb.org.co:8825/SeleccionServicioCita.aspx" , "_self");
+    Asesoria.show();
   }
 
-  LinkRenovacion(){
-    let options:InAppBrowserOptions = {
-      hidden:"yes",
-      hidenavigationbuttons:"yes",
-      hideurlbar: "yes",
-      hardwareback: "yes",
-      footer: "yes",
-      footercolor: "blue"
-    }
-    this.browser.create("https://linea.ccb.org.co/apprenovaciones/index.html#!/" , "_self")
+  LinkRenovacion(){    
+    const renovaciones = this.browser.create("https://linea.ccb.org.co/apprenovaciones/index.html#!/" , "_self")
+    renovaciones.show();
   }
 
 }

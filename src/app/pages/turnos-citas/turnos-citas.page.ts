@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-turnos-citas',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TurnosCitasPage implements OnInit {
 
-  constructor() { }
+  constructor(private browser:InAppBrowser) { }
 
   ngOnInit() {
+  }
+
+  LinkTurnos(){    
+    const Turnos = this.browser.create("https://agendamiento.ccb.org.co/DatosTurnoUsuario.aspx" , "_self")
+    Turnos.show();
+  }
+
+  LinkCitas(){    
+    const Citas = this.browser.create("https://agendamiento.ccb.org.co/CitaUsuario.aspx" , "_self")
+    Citas.show();
   }
 
 }
