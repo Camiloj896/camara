@@ -53,10 +53,6 @@ const routes: Routes = [
       {
         path: 'tab3',
         loadChildren: '../consultas/consultas.module#ConsultasPageModule'
-      },
-      {
-        path: 'tab4',
-        loadChildren: '../chat/chat.module#ChatPageModule'
       }      
     ]
   },
