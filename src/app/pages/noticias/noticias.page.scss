@@ -6,7 +6,7 @@
     padding: 0;
     border-radius: 0;    
     box-shadow: none;
-    background-image: url(./../../../assets/img/fondo-tramites.png);
+    background-image: url(./../../../assets/img/Noticias.png);
     background-size: 100% 100%;
 }
 
@@ -27,6 +27,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #FFF;
+}
+
+.aux-card > strong{
+    font-size: 30px;    
+    // text-shadow: -3px 1px black;
+    font-family: "RobotoCondensed-Light" !important;
+    src: url('./../../../assets/font/RobotoCondensed-Light.ttf');
 }
 
 .content-options{

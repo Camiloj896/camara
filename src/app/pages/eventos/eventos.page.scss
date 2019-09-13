@@ -6,7 +6,7 @@
     padding: 0;
     border-radius: 0;    
     box-shadow: none;
-    background-image: url(./../../../assets/img/fondo-tramites.png);
+    background-image: url(./../../../assets/img/eventos.png);
     background-size: 100% 100%;
 }
 
@@ -22,10 +22,22 @@
 
 .aux-card{
     width: 100%;
-    height: 30%;
+    height: 38%;
     padding-left: 25px;
     font-size: 1.2rem;
     color: #FFF;
+}
+
+.aux-card > div > strong{
+    font-size: 30px;    
+    // text-shadow: -3px 1px black;
+    font-family: "RobotoCondensed-Regular" !important;
+    src: url('./../../../assets/font/RobotoCondensed-Regular.ttf');
+    margin-top: 0;
+}
+
+.aux-card > div:last-child{
+    margin-top: -18px;
 }
 
 .content-options{
@@ -42,24 +54,33 @@
     padding: 0;    
 }
 
-.content-options> ion-card-content > div {
+.content-options> ion-card-content > div.content {
     width: 100%;
     height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.titile{
+    height: 5%;
+    display: block;
+    margin-bottom: 0;
+    margin-left: 10%;
+    font-family: "RobotoCondensed-Regular" !important;
+    src: url('./../../../assets/font/RobotoCondensed-Regular.ttf');
+    color: #071442;  
+    font-size: 20px;
 }
 
 div.options{
     width: 33%;
     height: 80%;
     background-color: #eeeeee;
-    margin: 0 10px 0 10px;
-    border-radius: 5px;
-    
+    margin: 0 6px 0 6px;
+    border-radius: 5px;  
 }
-
 .aux-opntions{
     margin-top: -20px;
 }
@@ -67,9 +88,13 @@ div.options{
 div.options > img {
     height: 100%;    
 }
-ion-card-content > strong {
-    margin-left: 10%;
-    font-size: 18px;
+ion-card-content > strong {    
+    font-size: 21px;
+    color: #071442;
+    font-family: "RobotoCondensed-Regular" !important;
+    src: url('./../../../assets/font/RobotoCondensed-Regular.ttf');
+    font-weight: bold;
+    margin: 0 0 0 10%;
 }
 
 

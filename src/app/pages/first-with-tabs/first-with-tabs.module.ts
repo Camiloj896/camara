@@ -23,6 +23,10 @@ const routes: Routes = [
         loadChildren: '../transacciones/transacciones.module#TransaccionesPageModule'
       },
       {
+        path: 'tab1/transacciones/macrosectores',
+        loadChildren: '../macrosectores/macrosectores.module#MacrosectoresPageModule'
+      },
+      {
         path: 'tab1/consultas/certificados',
         loadChildren: '../certificados-electronicos/certificados-electronicos.module#CertificadosElectronicosPageModule'
       },

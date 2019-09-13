@@ -6,7 +6,7 @@
     padding: 0;
     border-radius: 0;    
     box-shadow: none;
-    background-image: url(./../../../assets/img/fondo-tramites.png);
+    background-image: url(./../../../assets/img/solicitud_turno_citas.png);
     background-size: 100% 100%;
 }
 
@@ -22,10 +22,22 @@
 
 .aux-card{
     width: 100%;
-    height: 30%;
+    height: 38%;
     padding-left: 25px;
     font-size: 1.2rem;
     color: #FFF;
+}
+
+.aux-card > div > strong{
+    font-size: 30px;    
+    // text-shadow: -3px 1px black;
+    font-family: "RobotoCondensed-Regular" !important;
+    src: url('./../../../assets/font/RobotoCondensed-Regular.ttf');
+    margin-top: 0;
+}
+
+.aux-card > div:last-child{
+    margin-top: -18px;
 }
 
 .content-options{
