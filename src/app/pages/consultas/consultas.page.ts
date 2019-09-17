@@ -13,14 +13,19 @@ export class ConsultasPage implements OnInit {
   ngOnInit() {
   }
 
-  openAsesoria(){
-    const Asesoria = this.browser.create("https://asesoriavirtual.ccb.org.co:8825/SeleccionServicioCita.aspx" , "_self");
-    Asesoria.show();
-  }
+  OpenLink(url: string){    
+    
+    let options:InAppBrowserOptions = {
+      zoom: 'no',
+      footer: 'no',
+      hideurlbar: 'yes',
+      toolbarcolor: '#071442'
+    };
 
-  LinkRenovacion(){    
-    const renovaciones = this.browser.create("https://linea.ccb.org.co/apprenovaciones/index.html#!/" , "_self")
-    renovaciones.show();
-  }
+    const link = url;
 
+    const link_browser = this.browser.create(link, "_self", options);
+    link_browser.show();
+  }
+  
 }

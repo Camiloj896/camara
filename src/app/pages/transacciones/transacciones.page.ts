@@ -13,9 +13,19 @@ export class TransaccionesPage implements OnInit {
   ngOnInit() {
   }
 
-  openUrl(){
-    const Info = this.browser.create("https://www.ccb.org.co" , "_self");
-    Info.show();
+  openUrl(url: string){    
+    
+    let options:InAppBrowserOptions = {
+      zoom: 'no',
+      footer: 'no',
+      hideurlbar: 'yes',
+      toolbarcolor: '#071442'
+    };
+
+    const link = url;
+
+    const link_browser = this.browser.create(link, "_self", options);
+    link_browser.show();
   }
 
 }

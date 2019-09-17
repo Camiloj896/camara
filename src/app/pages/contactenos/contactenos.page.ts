@@ -13,15 +13,19 @@ export class ContactenosPage implements OnInit {
   ngOnInit() {
   }
 
-  urlChat(){
-    const Chat = this.browser.create("https://webchat.millenium.com.co/webchatccb/userinfo.jsp?chatID=1568385300856&workgroup=agentesccb@workgroup.chatminco.millenium.com.co" , "_self");
-    Chat.show();
-  }
+  OpenLink(url: string){    
+    
+    let options:InAppBrowserOptions = {
+      zoom: 'no',
+      footer: 'no',
+      hideurlbar: 'yes',
+      toolbarcolor: '#071442'
+    };
 
-  urlLlamadaVirtual(){
-    const Llamada = this.browser.create("https://webrtc.millenium.com.co/clicktocall/ccb/clicktocall.html" , "_self");
-    Llamada.show();
-  }
+    const link = url;
 
+    const link_browser = this.browser.create(link, "_self", options);
+    link_browser.show();
+  }
 
 }

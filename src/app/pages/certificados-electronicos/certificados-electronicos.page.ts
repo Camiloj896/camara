@@ -12,20 +12,19 @@ export class CertificadosElectronicosPage implements OnInit {
 
   ngOnInit() {
   }
+ 
+  OpenLink(url: string){    
+    
+    let options:InAppBrowserOptions = {
+      zoom: 'no',
+      footer: 'no',
+      hideurlbar: 'yes',
+      toolbarcolor: '#071442'
+    };
 
-  LinkSolicitud(){    
-    const Solicitud = this.browser.create("https://linea.ccb.org.co/CertificadosElectronicosR/Index.html#/buscar-inscritos" , "_self");
-    Solicitud.show();
+    const link = url;
+
+    const link_browser = this.browser.create(link, "_self", options);
+    link_browser.show();
   }
-
-  LinkDescarga(){    
-    const Descarga = this.browser.create("https://linea.ccb.org.co/CertificadosElectronicosR/Index.html#/descargas" , "_self");
-    Descarga.show();
-  }
-
-  LinkVerificacion(){
-    const Verificacion = this.browser.create("http://s3.amazonaws.com/validacertificados/Index.html#/verificacion" , "_self");
-    Verificacion.show();
-  }
-
 }
