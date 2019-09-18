@@ -5,8 +5,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { ComponentsModule } from '../../components/components.module';
 
 import { IonicModule } from '@ionic/angular';
-
 import { MacrosectoresPage } from './macrosectores.page';
+
+
 
 const routes: Routes = [
   {

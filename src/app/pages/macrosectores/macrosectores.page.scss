@@ -36,7 +36,7 @@
 }
 
 .content-options{
-    height: 60%;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -49,9 +49,9 @@
     padding: 0;
 }
 
-.content-options> ion-card-content > div {
+div.optionslist {
     width: 100%;
-    height: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,13 +59,23 @@
 }
 
 div.options{
-    width: 33%;
-    height: 100%;    
+    width: 50%;
+    height: 80%;    
     margin: 0 10px 0 10px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div.options > img {
-    height: 100%;    
+    height: 100%;   
+    width: 70%; 
 }
+
+.ultima-opcion{
+    height: 98% !important;
+    width: 61% !important;
+}
+
 

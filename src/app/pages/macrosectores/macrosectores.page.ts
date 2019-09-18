@@ -13,34 +13,21 @@ export class MacrosectoresPage implements OnInit {
   ngOnInit() {
   }
 
-  UrlServicios(){
-    const Asesoria = this.browser.create("https://www.ccb.org.co/Sectores/Servicios-empresariales/" , "_self");
-    Asesoria.show();
-  }
+  OpenLink(url: string){    
+    
+    let options:InAppBrowserOptions = {
+      zoom: 'no',
+      footer: 'no',
+      hideurlbar: 'yes',
+      toolbarcolor: '#071442',
+      closebuttoncolor: "white",
+      navigationbuttoncolor: "white"
+    };
 
-  UrlContruc(){
-    const Asesoria = this.browser.create("https://www.ccb.org.co/Sectores/Construccion-y-energia" , "_self");
-    Asesoria.show();
-  }
+    const link = url;
 
-  UrlSalud(){
-    const Asesoria = this.browser.create("https://www.ccb.org.co/Sectores/Salud-y-quimicos" , "_self");
-    Asesoria.show();
-  }
-
-  UrlModa(){
-    const Asesoria = this.browser.create("https://www.ccb.org.co/Sectores/Moda" , "_self");
-    Asesoria.show();
-  }
-
-  UrlAgro(){
-    const Asesoria = this.browser.create("https://www.ccb.org.co/Sectores/Agropecuario-y-agroindustrial" , "_self");
-    Asesoria.show();
-  }
-
-  UrlTurismo(){
-    const Asesoria = this.browser.create("https://www.ccb.org.co/Sectores/Turismo-y-gastronomia" , "_self");
-    Asesoria.show();
+    const link_browser = this.browser.create(link, "_self", options);
+    link_browser.show();
   }
 
 }

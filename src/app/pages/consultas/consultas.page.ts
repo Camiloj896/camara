@@ -19,7 +19,9 @@ export class ConsultasPage implements OnInit {
       zoom: 'no',
       footer: 'no',
       hideurlbar: 'yes',
-      toolbarcolor: '#071442'
+      toolbarcolor: '#071442',
+      closebuttoncolor: "white",
+      navigationbuttoncolor: "white"
     };
 
     const link = url;
