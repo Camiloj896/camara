@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { CallNumber } from '@ionic-native/call-number/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
   providers: [
     InAppBrowser,
     CallNumber,
+    Geolocation,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
