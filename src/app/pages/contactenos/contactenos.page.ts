@@ -22,10 +22,7 @@ export class ContactenosPage implements OnInit {
     
     let options:InAppBrowserOptions = {
       zoom: 'no',
-      footer: 'no',
-      toolbarcolor: '#071442',
-      closebuttoncolor: "white",
-      navigationbuttoncolor: "white"
+      footer: 'no'
     };
 
     const link = url;
