@@ -43,6 +43,10 @@ const routes: Routes = [
         loadChildren: '../contactenos/contactenos.module#ContactenosPageModule'
       },
       {
+        path: 'tab1/contactenos/ubiquenos',
+        loadChildren: '../ubiquenos/ubiquenos.module#UbiquenosPageModule'
+      },
+      {
         path: 'tab1/consultas/chat',
         loadChildren: '../chat/chat.module#ChatPageModule'
       },

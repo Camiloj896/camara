@@ -15,7 +15,7 @@ export class ContactenosPage implements OnInit {
   }
 
   Call(){
-    this.callNumber.callNumber("3007176920", true).then(res => alert('Bien'+res)).catch(err => alert("Error"+err));
+    this.callNumber.callNumber("#383", true).then(res => console.log('Bien'+res)).catch(err => console.log("Error"+err));
   }
 
   OpenLink(url: string){    

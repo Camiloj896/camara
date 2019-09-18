@@ -2,33 +2,27 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+import { ComponentsModule } from '../../components/components.module';
+
 import { IonicModule } from '@ionic/angular';
-import { MenuPage } from './menu.page';
- 
+
+import { UbiquenosPage } from './ubiquenos.page';
+
 const routes: Routes = [
   {
     path: '',
-    component: MenuPage,
-    children: [
-      {
-        path: 'first',
-        loadChildren: '../first-with-tabs/first-with-tabs.module#FirstWithTabsPageModule'
-      },
-      {
-        path: 'registro',
-        loadChildren: '../registro/registro.module#RegistroPageModule' 
-      }
-    ]
+    component: UbiquenosPage
   }
 ];
- 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [MenuPage]
+  declarations: [UbiquenosPage]
 })
-export class MenuPageModule { }
+export class UbiquenosPageModule {}
