@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
+import { CallNumber } from '@ionic-native/call-number/ngx';
 
 @Component({
   selector: 'app-contactenos',
@@ -8,9 +9,13 @@ import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/
 })
 export class ContactenosPage implements OnInit {
 
-  constructor(private browser:InAppBrowser) { }
+  constructor(private browser:InAppBrowser, private callNumber: CallNumber) { }
 
   ngOnInit() {
+  }
+
+  Call(){
+    this.callNumber.callNumber("3007176920", true).then(res => alert('Bien'+res)).catch(err => alert("Error"+err));
   }
 
   OpenLink(url: string){    
@@ -18,7 +23,6 @@ export class ContactenosPage implements OnInit {
     let options:InAppBrowserOptions = {
       zoom: 'no',
       footer: 'no',
-      hideurlbar: 'yes',
       toolbarcolor: '#071442',
       closebuttoncolor: "white",
       navigationbuttoncolor: "white"
