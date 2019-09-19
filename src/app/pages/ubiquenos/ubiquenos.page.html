@@ -1,6 +1,26 @@
 <app-header></app-header>
 <div id="map" style="width: 100%;height: 60%;"></div>
-<ion-label><b>Latitude:</b>{{latitude}}</ion-label><br/>
-<ion-label><b>Longitude:</b>{{longitude}}</ion-label><br/>
-<ion-label><b>TimesStamp:</b>{{timestamp}}</ion-label><br/>
+<ion-card>
+    <ion-card-content>
+        <!-- <ion-list *ngFor="let sedes of sedesDetails">
+            <ion-item>
+                {{sedes.nombre}}
+            </ion-item>
+        </ion-list> -->
+        <ion-slides>
+            <ion-slide *ngFor="let sedes of sedesDetails">
+                <div class="content-slide">
+                    <div class="tittle-slide"><strong>{{sedes.nombre}}</strong></div>
+                    <div>
+                        <div><strong>Dirrección:</strong><h6>{{sedes.direccion}}</h6></div>
+                        <div><strong>Horario:</strong><h6>{{sedes.horarios}}</h6></div>                                                  
+                    </div>
+                    <div>                            
+                        <div><strong>Telefono:</strong><h6>{{sedes.telefonos}}</h6></div>                           
+                    </div>
+                </div>                                   
+            </ion-slide>        
+        </ion-slides>
+    </ion-card-content>    
+</ion-card>
 

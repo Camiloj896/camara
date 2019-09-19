@@ -1,1 +1,54 @@
 <app-header></app-header>
+<ion-content>
+  <ion-card class="bg-inicio" routerLink="/menu/first">
+  
+  </ion-card>
+  <ion-grid>
+    <ion-row color="primary" >
+      <ion-col>
+            <div class="titulo-content">
+              <ion-text color="primary">Hola, <br></ion-text>
+              <ion-text color="primary">Bienvenido a la CCB</ion-text>
+            </div>      
+            <div padding>
+                <ion-item lines="none">  
+                    <ion-label position="floating">Nombres</ion-label>
+                    <ion-input required type="text"></ion-input>
+                  </ion-item>
+                  <ion-item lines="none">
+                    <ion-label position="floating">Apellidos</ion-label>
+                    <ion-input required type="text"></ion-input>
+                  </ion-item>
+                  <ion-item lines="none">
+                    <ion-label position="floating">Correo Electrónico</ion-label>
+                    <ion-input required type="email"></ion-input>
+                  </ion-item>
+                  <ion-item lines="none">
+                    <ion-label position="floating">Clave</ion-label>
+                    <ion-input required type="password"></ion-input>
+                  </ion-item>
+            </div>
+            <div class="registro-BTN">
+              <ion-button>Registrarse</ion-button>
+            </div>
+            <div padding>
+              <div class="Terminos">
+                <div><ion-checkbox color="dark"></ion-checkbox></div>
+                <div>
+                    <ion-text color="primary">
+                      <h6>Consulta terminos y condiciones <u (click)="OpenLink('https://www.ccb.org.co/Terminos-y-condiciones')">aqui</u></h6>
+                    </ion-text> 
+                </div>
+              </div>
+              <ion-text color="primary">
+                <p>
+                  Terminos de tratamientos de datos personales<br>
+                  (habeas data - cookies - referencia y uso de las fotos)
+                </p>
+              </ion-text> 
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>
